@@ -206,21 +206,21 @@ const ContactForm = () => {
                         <label className={`${inter.className} font-medium text-[14px]`}>
                         {getEmailLabelText()}
                         </label>
-                        <input className="text-[12px] xl:text-[14px] rounded-md p-2 bg-[#D9D9D9] text-black font-semibold border-2 border-white" name="email" onChange={handleInput} disabled={isSubmitted} value={formData.email}></input>
+                        <input className="text-[12px] xl:text-[14px] rounded-md p-2 bg-[#D9D9D9] text-black font-semibold border-2 border-white" aria-label="email input field" name="email" onChange={handleInput} disabled={isSubmitted} value={formData.email}></input>
                     </div>
 
                     <div className='flex flex-col space-y-1 w-full'>
                         <label className={`${inter.className} font-medium text-[14px]`}>
                             {isFormValid ? "Discord username" : "Discord username *"}
                         </label>
-                        <input className="text-[12px] xl:text-[14px] rounded-md p-2 bg-[#D9D9D9] text-black font-semibold border-2 border-white" name="discordUsername" onChange={handleInput} disabled={isSubmitted} value={formData.discordUsername}></input>
+                        <input className="text-[12px] xl:text-[14px] rounded-md p-2 bg-[#D9D9D9] text-black font-semibold border-2 border-white" aria-label="discord username input field" name="discordUsername" onChange={handleInput} disabled={isSubmitted} value={formData.discordUsername}></input>
                     </div>
 
                     <div className='flex flex-col space-y-1 w-full'>
                         <label className={`${inter.className} font-medium text-[14px]`}>
                         {isFormValid ? "Message" : "Message *"}
                         </label>
-                        <textarea className="text-[12px] xl:text-[14px] rounded-md pb-16 pl-2 pt-1 bg-[#D9D9D9] text-black font-semibold max-h-40 border-2 border-white" name="message" onChange={handleInput} disabled={isSubmitted} value={formData.message}></textarea>
+                        <textarea className="text-[12px] xl:text-[14px] rounded-md pb-16 pl-2 pt-1 bg-[#D9D9D9] text-black font-semibold max-h-40 border-2 border-white" aria-label="message input field" name="message" onChange={handleInput} disabled={isSubmitted} value={formData.message}></textarea>
                     </div>
                     
                     <button className={`flex justify-center items-center self-end ${isSubmitted ? "hidden" : ""}`} disabled={!isEmailValid || !isFormValid} aria-label="submit contact form button">
