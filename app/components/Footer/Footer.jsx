@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='flex items-center justify-center pb-4 mb-2 border-b-2 border-[#B1A6BA] rounded md:w-1/2'>
 
                 <div className='flex flex-col md:flex-row self-start pr-10 md:pr-48 flex-none'>
-                    <Link href="https://discord.gg/AJDXPs5jzR" rel="noopener noreferrer" target="_blank">
+                    <Link href="https://discord.gg/AJDXPs5jzR" rel="noopener noreferrer" target="_blank" aria-label="link for discord waiting room">
                         <div className='flex flex-col items-center justify-center pb-4 md:pr-10'>
                             <h3 className='font-bold text-[#B1A6BA] text-[14px] pb-2 md:text-[16px] md:pb-10'>
                                 Join our waiting room !
@@ -26,7 +26,7 @@ const Footer = () => {
                                 </div>
                         </div>
                     </Link>
-                    <Link href="https://x.com/lucidautomation" rel="noopener noreferrer" target="_blank">
+                    <Link href="https://x.com/lucidautomation" rel="noopener noreferrer" target="_blank" aria-label="link for x">
                         <div className='flex flex-col items-center justify-center pb-4'>
                             <h3 className='font-bold text-[#B1A6BA] text-[14px] pb-2 md:text-[16px]  md:pb-10'>
                                 Follow us on X !
@@ -92,7 +92,7 @@ export default Footer;
 
 const NavLink = ( { href, text }) => {
     return (
-        <Link href={href}>
+        <Link href={href} aria-label={text}>
             <span className="block hover:underline">{text}</span>
         </Link>
     )

@@ -75,7 +75,7 @@ const NavigationBar = () => {
 
 const NavLink = ( { href, text }) => {
     return (
-        <Link href={href}>
+        <Link href={href} aria-label={text}>
             <span className="block hover:underline">{text}</span>
         </Link>
     )
