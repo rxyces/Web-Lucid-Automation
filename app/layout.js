@@ -1,6 +1,7 @@
 import { merriweather_sans } from './fonts';
 import "./globals.css";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import Footer from "./components/Footer/Footer";
 /** @type {import("next").Viewport} */
