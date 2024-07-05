@@ -1,0 +1,20 @@
+
+.button {
+    width: 139px;
+    height: 47px;
+    background-color: #853fbe;
+    border-radius: 12px;
+    padding: 15px 53px 15px 53px;
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    white-space: nowrap;
+}
+
+.button:disabled {
+    background-color: #3e2851;
+}
+
+.button:hover:enabled {
+    background-color: #A46ED1;
+}

@@ -1,0 +1,54 @@
+.outerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    margin-top: 20%;
+}
+
+.title {
+    border-top: 2px solid #fff;
+    padding-top: 15px;
+    width: 70%;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #533F64;
+}
+
+.terms {
+    font-size: 14px;
+    max-width: 70%;
+    color: #533F64;
+}
+
+.innerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.socialsText {
+    font-size: 18px;
+    font-weight: bold;
+    color: #B1A6BA;
+    margin-bottom: 15px;
+}
+
+.navigationTitles {
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.navigationLinks {
+    font-size: 18px;
+    font-weight: bold;
+    color: #B1A6BA;
+    margin-bottom: 3px;
+}
+
+.navigationLinks:hover {
+    text-decoration: underline;
+}
