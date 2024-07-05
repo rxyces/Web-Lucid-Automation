@@ -187,12 +187,12 @@ const ContactForm = () => {
                     <h2 className={`${inter.className} font-semibold text-[14px] mt-3 xl:text-[22px]`}>
                         Contact Lucid Automation
                     </h2>
-                    <h4 className={`${inter.className} font-regular text-[10px] text-[#B1A6BA] xl:text-[14px]`}>
+                    <h5 className={`${inter.className} font-regular text-[10px] text-[#B1A6BA] xl:text-[14px]`}>
                         lucid_automation · Instagram 
-                    </h4>
-                    <h4 className={`${inter.className} font-regular text-[10px] text-[#B1A6BA] xl:text-[14px]`}>
+                    </h5>
+                    <h5 className={`${inter.className} font-regular text-[10px] text-[#B1A6BA] xl:text-[14px]`}>
                         999 followers · 5 posts  
-                    </h4>
+                    </h5>
 
                     <div className="mt-2 w-[70px] h-[18px] bg-[#292929] rounded-md flex justify-center items-center xl:w-[100px] xl:h-[33px] xl:mt-4">
                         <div className={`${inter.className} font-semibold text-[10px] xl:text-[14px]`}>
