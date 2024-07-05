@@ -139,7 +139,7 @@ const ContactForm = () => {
                 
             </div>
 
-            <div className='flex flex-col rounded-lg w-2/3 h-[600px] xl:w-2/3 xl:h-[800px] border-2 border-white shadow-[0_4px_6px_rgba(255,255,255,0.2),0_10px_20px_rgba(255,255,255,0.2)] bg-gradient-to-tr from-[#2C1A3E] from-5% to-[#0F041B] to-95%'>
+            <div className='flex flex-col rounded-lg w-5/6 h-[600px] xl:w-2/3 xl:h-[800px] border-2 border-white shadow-[0_4px_6px_rgba(255,255,255,0.2),0_10px_20px_rgba(255,255,255,0.2)] bg-gradient-to-tr from-[#2C1A3E] from-5% to-[#0F041B] to-95%'>
                 <div className='flex mt-4 items-center border-b-[1px] border-white pb-3'>
                     <svg viewBox="0 0 6 14" fill="white" xmlns="http://www.w3.org/2000/svg" className="w-[6px] h-[14px ml-5 xl:hidden">
                         <path stroke="white" strokeLinecap="round" strokeLinejoin="round" d="M-3.81512e-05 6.999C-3.81512e-05 6.80702 0.0564731 6.61504 0.170269 6.46906L5.00854 0.219726C5.23536 -0.0732422 5.60307 -0.0732422 5.82989 0.219726C6.0567 0.512695 6.0567 0.987644 5.82989 1.28061L1.4019 7L5.82989 12.7194C6.0567 13.0124 6.0567 13.4873 5.82989 13.7803C5.60307 14.0732 5.23536 14.0732 5.00854 13.7803L0.170269 7.53094C0.0572472 7.38496 -3.81512e-05 7.19298 -3.81512e-05 7.001V6.999Z"/>
@@ -201,29 +201,29 @@ const ContactForm = () => {
                     </div>
                 </div>
                 
-                <form className='ml-5 mt-10' onSubmit={submitForm}>
-                    <div className='flex flex-col mb-4 space-y-1'>
+                <form className='mt-10 flex flex-col items-center space-y-4 w-11/12 self-center xl:space-y-8' onSubmit={submitForm}>
+                    <div className='flex flex-col space-y-1 w-full'>
                         <label className={`${inter.className} font-medium text-[14px]`}>
                         {getEmailLabelText()}
                         </label>
-                        <input className="text-[12px] xl:text-[14px] rounded-md w-11/12 p-2 bg-[#D9D9D9] text-black font-semibold border-2 border-white" name="email" onChange={handleInput} disabled={isSubmitted} value={formData.email}></input>
+                        <input className="text-[12px] xl:text-[14px] rounded-md p-2 bg-[#D9D9D9] text-black font-semibold border-2 border-white" name="email" onChange={handleInput} disabled={isSubmitted} value={formData.email}></input>
                     </div>
 
-                    <div className='flex flex-col mb-4 space-y-1'>
+                    <div className='flex flex-col space-y-1 w-full'>
                         <label className={`${inter.className} font-medium text-[14px]`}>
                             {isFormValid ? "Discord username" : "Discord username *"}
                         </label>
-                        <input className="text-[12px] xl:text-[14px] rounded-md w-11/12 p-2 bg-[#D9D9D9] text-black font-semibold border-2 border-white" name="discordUsername" onChange={handleInput} disabled={isSubmitted} value={formData.discordUsername}></input>
+                        <input className="text-[12px] xl:text-[14px] rounded-md p-2 bg-[#D9D9D9] text-black font-semibold border-2 border-white" name="discordUsername" onChange={handleInput} disabled={isSubmitted} value={formData.discordUsername}></input>
                     </div>
 
-                    <div className='flex flex-col space-y-1'>
+                    <div className='flex flex-col space-y-1 w-full'>
                         <label className={`${inter.className} font-medium text-[14px]`}>
                         {isFormValid ? "Message" : "Message *"}
                         </label>
-                        <textarea className="text-[12px] xl:text-[14px] rounded-md pb-16 pl-2 pt-1 w-11/12 bg-[#D9D9D9] text-black font-semibold max-h-40 border-2 border-white" name="message" onChange={handleInput} disabled={isSubmitted} value={formData.message}></textarea>
+                        <textarea className="text-[12px] xl:text-[14px] rounded-md pb-16 pl-2 pt-1 bg-[#D9D9D9] text-black font-semibold max-h-40 border-2 border-white" name="message" onChange={handleInput} disabled={isSubmitted} value={formData.message}></textarea>
                     </div>
                     
-                    <button className={`flex justify-center items-center mt-3 ml-auto mr-7 xl:mt-8 xl:mr-14 ${isSubmitted ? "hidden" : ""}`} disabled={!isEmailValid || !isFormValid}>
+                    <button className={`flex justify-center items-center self-end ${isSubmitted ? "hidden" : ""}`} disabled={!isEmailValid || !isFormValid}>
                         <h3 className={`${inter.className} font-medium text-[14px] mr-2 xl:text-[18px] transition-colors duration-300 ${!isEmailValid || !isFormValid ? "text-[#006BBF]": "text-[#0095F7]"}`}>
                             Send
                         </h3>
@@ -233,9 +233,9 @@ const ContactForm = () => {
                             </svg>
                         </div>
                     </button>
-
+                    
                     <div className={`flex justify-center items-center mt-3 xl:mt-8 ${!isSubmitted ? "hidden" : ""}`}>
-                        <h3 className={`${inter.className} font-medium text-[14px] mr-2 xl:text-[18px] underline underline-offset-4`}>
+                        <h3 className={`${inter.className} font-medium text-[14px] xl:text-[18px] underline underline-offset-4`}>
                             Thanks for submitting !
                         </h3>
                     </div>
