@@ -72,6 +72,7 @@ const Waitlist = () => {
                     </div>
                 </div>
                 <button 
+                    aria-label="submit waitlist button"
                     disabled={!isEmailValid || isSubmitted}
                     onClick={handleClick} 
                     className={`mt-16 border-2 border-white rounded-lg whitespace-nowrap flex justify-center items-center text-[13px] md:text-[14px] transform transition-all duration-300 ${isSubmitted ? 'bg-green-500 w-12 h-8 md:w-14 md:h-10' : 'enabled:bg-[#0095F7] w-32 h-8 md:w-64 md:h-10 hover:enabled:scale-105 disabled:bg-opacity-50 disabled:bg-[#637A99]'}`}

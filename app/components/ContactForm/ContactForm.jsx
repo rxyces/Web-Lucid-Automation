@@ -223,7 +223,7 @@ const ContactForm = () => {
                         <textarea className="text-[12px] xl:text-[14px] rounded-md pb-16 pl-2 pt-1 bg-[#D9D9D9] text-black font-semibold max-h-40 border-2 border-white" name="message" onChange={handleInput} disabled={isSubmitted} value={formData.message}></textarea>
                     </div>
                     
-                    <button className={`flex justify-center items-center self-end ${isSubmitted ? "hidden" : ""}`} disabled={!isEmailValid || !isFormValid}>
+                    <button className={`flex justify-center items-center self-end ${isSubmitted ? "hidden" : ""}`} disabled={!isEmailValid || !isFormValid} aria-label="submit contact form button">
                         <h3 className={`${inter.className} font-medium text-[14px] mr-2 xl:text-[18px] transition-colors duration-300 ${!isEmailValid || !isFormValid ? "text-[#006BBF]": "text-[#0095F7]"}`}>
                             Send
                         </h3>

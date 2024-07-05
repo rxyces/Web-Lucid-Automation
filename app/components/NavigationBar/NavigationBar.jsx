@@ -51,7 +51,7 @@ const NavigationBar = () => {
                 </div>
 
                 <div className='flex md:hidden self-center ml-auto mr-6'>
-                    <button onClick={() => {setToggle(!toggle)}}>
+                    <button onClick={() => {setToggle(!toggle)}} aria-label="toggle for navigation bar">
                     <svg className={`transform transition-transform duration-300 ${toggle ? 'rotate-180' : ''}`} width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 9l6 6 6-6" stroke="#B1A6BA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>

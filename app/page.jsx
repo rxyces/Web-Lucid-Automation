@@ -81,12 +81,10 @@ export default function Home() {
             <div></div>
 
             <div className='flex items-center justify-center m-10 mt-64'>
-                <Link href="#features0">
-                    <button>
+                <Link href="#features0" aria-label="Scroll to features">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="#c7c2cb" className="size-6 md:size-8">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
                     </svg>
-                    </button>
                 </Link>
             </div>
 
@@ -106,12 +104,10 @@ export default function Home() {
             </div>
 
             <div className='flex items-center justify-center m-10 mt-64'>
-                <Link href="#contactForm">
-                    <button>
+                <Link href="#contactForm" aria-label="Scroll to contact form">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="#c7c2cb" className="size-6 md:size-8">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
                     </svg>
-                    </button>
                 </Link>
             </div>
 
