@@ -1,7 +1,9 @@
-
+import SEO from "../components/SEO/SEO"
 
 const Terms = () => {
     return (
+        <>
+        <SEO pageTitle="Lucid Automation Terms and Conditions" pageDescription="Read our terms and conditions"/>
         <div className="flex flex-col mx-auto w-3/4 mt-8 items-center md:mt-24">
             <div>
                 <h1 className="text-[18px] font-bolder md:text-[32px]">
@@ -411,6 +413,7 @@ const Terms = () => {
             </div>
             
         </div>
+        </>
     )
 }
 

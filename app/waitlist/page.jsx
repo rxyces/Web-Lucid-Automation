@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from "react";
+import SEO from "../components/SEO/SEO";
 
 const Waitlist = () => {
     const [ isSubmitted, setIsSubmitted ] = useState(false);
@@ -55,7 +56,8 @@ const Waitlist = () => {
     }, [email]);
 
     return (
-        <main>  
+        <main>
+            <SEO pageTitle="Join the Lucid Automation Waitlist" pageDescription="Sign up to the Lucid Automation waitlist to join our user base currently managing over 10,000 growing accounts. Secure your spot today!"/>
             <div className="flex flex-col items-center text-center mt-10 md:mt-24 mb-64">
                 <h1 className="font-extrabold text-[22px] md:text-[48px]">
                     Smart tools for smarter growth

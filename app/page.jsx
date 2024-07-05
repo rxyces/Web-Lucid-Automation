@@ -6,6 +6,7 @@ import WaitlistButton from './components/WaitlistButton/WaitlistButton';
 import BuyButton from './components/BuyButton/BuyButton';
 import FeatureWidget from './components/FeatureWidget/FeatureWidget';
 import ContactForm from './components/ContactForm/ContactForm';
+import SEO from './components/SEO/SEO';
 
 
 export default function Home() {
@@ -50,6 +51,7 @@ export default function Home() {
 
 	return (
 		<main>
+            <SEO pageTitle="Lucid Automation - The No 1 Social Media Toolbox" pageDescription="Revolutionary social media management software, designed to grow your social media presence. Effortlessly gain engagement and enhance outreach."/>
             <div className='flex flex-col md:flex-row items-center justify-center pt-10 px-8 md:pt-56 md:px-36'>
                 <div className='flex flex-col max-w-[400px] md:max-w-lg m-10 md:pb-36 md:flex-none'>
                     <div className='font-extrabold text-[16px] md:text-[36px]'>
