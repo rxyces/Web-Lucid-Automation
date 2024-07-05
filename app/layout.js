@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
         <body className={`${merriweather_sans.className} min-h-screen`}>
             <div style={{ fontSize: '16px' }}>
+                <SpeedInsights/>
                 <NavigationBar/>
                 {children}
                 <Footer/>
