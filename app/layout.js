@@ -15,7 +15,7 @@ export const viewport = {
 
 export const metadata = {
     title: "Lucid Automation",
-    description: "Ultimate toolset for Instagram account management and growth",
+    description: "Revolutionary social media management software, designed to grow your social media presence. Effortlessly gain engagement and enhance outreach.",
 };
 
 
